@@ -1,0 +1,5 @@
+E:\Research\AngularCustomerApps\AngularCustomerApps\bin\AngularCustomerApps.dll
+E:\Research\AngularCustomerApps\AngularCustomerApps\bin\AngularCustomerApps.pdb
+E:\Research\AngularCustomerApps\AngularCustomerApps\obj\Debug\AngularCustomerApps.csprojResolveAssemblyReference.cache
+E:\Research\AngularCustomerApps\AngularCustomerApps\obj\Debug\AngularCustomerApps.dll
+E:\Research\AngularCustomerApps\AngularCustomerApps\obj\Debug\AngularCustomerApps.pdb
