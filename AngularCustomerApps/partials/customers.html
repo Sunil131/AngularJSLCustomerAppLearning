@@ -1,9 +1,41 @@
-﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title></title>
-</head>
-<body>
+﻿<div>
+    <header>
+        <h3>Customers</h3>
+    </header>
+    <div class="form-inline">
+        <label class="sr-only" for="txtFirstName">Email Address</label>
+        <input type="text" data-ng-model="newCustomer.FirstName" class="form-control" id="txtFirstName" placeholder="First Name" />
 
-</body>
-</html>
+        <label class="sr-only" for="txtLastName">Email Address</label>
+        <input type="text" data-ng-model="newCustomer.LastName" class="form-control" id="txtLastName" placeholder="Last Name" />
+
+        <label class="sr-only" for="txtCity">Email Address</label>
+        <input type="text" data-ng-model="newCustomer.city" class="form-control" id="txtCity" placeholder="City" />
+
+        <label class="sr-only" for="btnAddCustomer">Email Address</label>
+        <button value="AddCustomer" class="btn btn-default" data-ng-click="addCustomer()">AddCustomer</button>
+
+    </div>
+    <div>
+        
+            <ul>
+                <li data-ng-repeat="customer in customers">
+                    {{customer.firstName}}-{{customer.lastName}}-{{customer.city}}
+                </li>
+            </ul>
+             <div class="row cardContainer">
+                <div class="span3 card" data-ng-repeat="customer in customers | orderBy:'lastName'">
+                    <button class="btn close cardClose" data-ng-click="deleteCustomer(customer.id)">&times;</button>
+                    <div class="cardHeader">{{customer.firstName + ' ' + customer.lastName}}</div>
+                    <div class="cardBody">{{customer.city}}</div>
+                    <a href="#/customerorders/{{customer.id}}" class="cardBody btn-link">View {{ customer.orders.length }} Orders</a>
+                </div>
+            </div>
+        
+    </div>
+</div>
+
+
+
+
+

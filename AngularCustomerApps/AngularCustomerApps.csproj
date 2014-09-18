@@ -58,7 +58,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app.js" />
+    <Content Include="controller\controllers.js" />
     <Content Include="CustomerManagementApp.html" />
+    <Content Include="JS\angular-route.js" />
     <Content Include="JS\angular.js" />
     <Content Include="JS\bootstrap\css\bootstrap-theme.css" />
     <Content Include="JS\bootstrap\css\bootstrap-theme.css.map" />
@@ -90,7 +92,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="controller\" />
     <Folder Include="directives\" />
     <Folder Include="services\" />
   </ItemGroup>

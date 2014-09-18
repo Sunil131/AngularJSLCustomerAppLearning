@@ -1,21 +1,29 @@
-﻿var CustomerApp = angular.module("CustomerApp", ['ngRoute']);
+﻿var app = angular.module('customersApp', ['ngRoute']);
 
-CustomerApp.config(function ($routeProvider) {
+app.config(function ($routeProvider) {
     $routeProvider
-        .when('customers',
+         .when('/',
             {
-                controller: '',
-                templateUrl:''
+                controller: 'CustomerController',
+                templateUrl: '/partials/customers.html'
+            })
+        .when('/customers',
+            {
+                controller: 'CustomerController',
+                templateUrl:'/partials/customers.html'
             })
             .when('/customerOrders',
             {
                 controller: '',
-                templateUrl:''
+                templateUrl: '/partials/customerOrders.html'
             })
             .when('/orders',
             {
                 controller: '',
-                templateUrl:''
+                templateUrl:'orders.html'
             }
         )
     });
+
+
+
