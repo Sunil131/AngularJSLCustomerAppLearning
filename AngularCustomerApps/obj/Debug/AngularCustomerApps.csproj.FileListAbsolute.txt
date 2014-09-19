@@ -3,3 +3,8 @@ E:\Research\AngularCustomerApps\AngularCustomerApps\bin\AngularCustomerApps.pdb
 E:\Research\AngularCustomerApps\AngularCustomerApps\obj\Debug\AngularCustomerApps.csprojResolveAssemblyReference.cache
 E:\Research\AngularCustomerApps\AngularCustomerApps\obj\Debug\AngularCustomerApps.dll
 E:\Research\AngularCustomerApps\AngularCustomerApps\obj\Debug\AngularCustomerApps.pdb
+D:\MyResearchs\GitSource\AngularJSLCustomerAppLearning\AngularCustomerApps\bin\AngularCustomerApps.dll
+D:\MyResearchs\GitSource\AngularJSLCustomerAppLearning\AngularCustomerApps\bin\AngularCustomerApps.pdb
+D:\MyResearchs\GitSource\AngularJSLCustomerAppLearning\AngularCustomerApps\obj\Debug\AngularCustomerApps.csprojResolveAssemblyReference.cache
+D:\MyResearchs\GitSource\AngularJSLCustomerAppLearning\AngularCustomerApps\obj\Debug\AngularCustomerApps.dll
+D:\MyResearchs\GitSource\AngularJSLCustomerAppLearning\AngularCustomerApps\obj\Debug\AngularCustomerApps.pdb

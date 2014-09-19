@@ -62,6 +62,15 @@
     <Content Include="CustomerManagementApp.html" />
     <Content Include="JS\angular-route.js" />
     <Content Include="JS\angular.js" />
+    <Content Include="JS\bootcards\css\bootcards-android.css" />
+    <Content Include="JS\bootcards\css\bootcards-android.min.css" />
+    <Content Include="JS\bootcards\css\bootcards-desktop.css" />
+    <Content Include="JS\bootcards\css\bootcards-desktop.min.css" />
+    <Content Include="JS\bootcards\css\bootcards-ios.css" />
+    <Content Include="JS\bootcards\css\bootcards-ios.min.css" />
+    <Content Include="JS\bootcards\fonts\icomoon.svg" />
+    <Content Include="JS\bootcards\js\bootcards.js" />
+    <Content Include="JS\bootcards\js\bootcards.min.js" />
     <Content Include="JS\bootstrap\css\bootstrap-theme.css" />
     <Content Include="JS\bootstrap\css\bootstrap-theme.css.map" />
     <Content Include="JS\bootstrap\css\bootstrap-theme.min.css" />
@@ -78,12 +87,16 @@
     <Content Include="partials\customerOrders.html" />
     <Content Include="partials\customers.html" />
     <Content Include="partials\orders.html" />
+    <Content Include="services\customerService.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="JS\bootcards\fonts\icomoon.eot" />
+    <Content Include="JS\bootcards\fonts\icomoon.ttf" />
+    <Content Include="JS\bootcards\fonts\icomoon.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -93,7 +106,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="directives\" />
-    <Folder Include="services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
