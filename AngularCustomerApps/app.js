@@ -14,7 +14,7 @@ app.config(function ($routeProvider) {
             })
             .when('/customerOrders',
             {
-                controller: '',
+                controller: 'CustomerOrdersController',
                 templateUrl: '/partials/customerOrders.html'
             })
             .when('/orders',

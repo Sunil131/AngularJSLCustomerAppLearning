@@ -15,17 +15,19 @@
         <h3>Customers</h3>
     </header>
     <div class="form-inline">
-        <label class="sr-only" for="txtFirstName">Email Address</label>
+        <label class="sr-only" for="txtFirstName">First Name</label>
         <input type="text" data-ng-model="newCustomer.FirstName" class="form-control" id="txtFirstName" placeholder="First Name" />
 
-        <label class="sr-only" for="txtLastName">Email Address</label>
+        <label class="sr-only" for="txtLastName">Last Name</label>
         <input type="text" data-ng-model="newCustomer.LastName" class="form-control" id="txtLastName" placeholder="Last Name" />
 
-        <label class="sr-only" for="txtCity">Email Address</label>
+        <label class="sr-only" for="txtCity">City</label>
         <input type="text" data-ng-model="newCustomer.city" class="form-control" id="txtCity" placeholder="City" />
 
         <label class="sr-only" for="btnAddCustomer">Email Address</label>
-        <button value="AddCustomer" class="btn btn-default" data-ng-click="addCustomer()">AddCustomer</button>
+        <button value="AddCustomer" class="btn btn-default"
+            data-ng-disable="!newCustomer.firstName||newCustomer.lastName||newCustomer.city" 
+            data-ng-click="insertCustomers()">AddCustomer</button>
 
     </div>
     <div class="container" id="main">
@@ -43,7 +45,7 @@
                                 <span>Delete</span>
                             </a>
                         </div>
-                        <button data-ng-click="deleteCustomer()" class="btn btn-primary pull-right hidden-xs"><div class="glyphicon glyphicon-remove"/></button>
+                        <button data-ng-click="deleteCustomer(customer.id)" class="btn btn-primary pull-right hidden-xs glyphicon glyphicon-remove"></button>
                         
                         
                     </div>
