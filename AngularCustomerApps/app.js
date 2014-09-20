@@ -1,4 +1,5 @@
-﻿var app = angular.module('customersApp', ['ngRoute']);
+﻿//var app = angular.module('customersApp', ['ngRoute']);
+var app = angular.module('customersApp', ['ngRoute', 'ngAnimate']);
 
 app.config(function ($routeProvider) {
     $routeProvider
@@ -12,15 +13,15 @@ app.config(function ($routeProvider) {
                 controller: 'CustomerController',
                 templateUrl:'/partials/customers.html'
             })
-            .when('/customerOrders',
+            .when('/customerOrders/:customerID',
             {
                 controller: 'CustomerOrdersController',
                 templateUrl: '/partials/customerOrders.html'
             })
             .when('/orders',
             {
-                controller: '',
-                templateUrl:'orders.html'
+                controller: 'ordersController',
+                templateUrl:'/partials/orders.html'
             }
         )
     });

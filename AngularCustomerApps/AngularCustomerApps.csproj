@@ -87,6 +87,7 @@
     <Content Include="partials\customerOrders.html" />
     <Content Include="partials\customers.html" />
     <Content Include="partials\orders.html" />
+    <Content Include="partials\OrderTable.html" />
     <Content Include="services\customerService.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -118,9 +119,9 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
-          <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>49422</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:49328/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

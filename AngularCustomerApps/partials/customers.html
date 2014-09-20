@@ -26,14 +26,14 @@
 
         <label class="sr-only" for="btnAddCustomer">Email Address</label>
         <button value="AddCustomer" class="btn btn-default"
-            data-ng-disable="!newCustomer.firstName||newCustomer.lastName||newCustomer.city" 
+             data-ng-disabled="!newCustomer.FirstName || !newCustomer.LastName || !newCustomer.city" 
             data-ng-click="insertCustomers()">AddCustomer</button>
 
     </div>
     <div class="container" id="main">
         <br />
 
-        <div data-ng-repeat="customer in customers" class="col-sm-5 bootcards-list">
+        <div data-ng-repeat="customer in customers " data-ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}" class="col-sm-5 bootcards-list">
             <div id="contactCard">
                 <div class="panel panel-default">
                     <div class="panel-heading clearfix">
@@ -54,7 +54,7 @@
                             City:  {{customer.city}}
                         </div>
                         <div class="list-group-item">
-                            <a href="#/customerorders/{{customer.id}}">View {{customer.orders.length}} Orders </a>
+                            <a href="#/customerOrders/{{customer.id}}">View {{customer.orders.length}} Orders </a>
                         </div>
                     </div>
                 </div>

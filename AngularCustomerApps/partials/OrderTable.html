@@ -1,0 +1,40 @@
+﻿<div  id="OrderTable" data-ng-controller="orderTableController"  >
+    <table class="table table-hover table-striped table-condensed table-bordered ordersTable">
+        <thead>
+        <tr>
+            <th class="thead">Product</th>
+            <th class="thead">Quantity</th>
+            <th class="thead">Currecy</th>
+            <th class="thead">Total</th>
+        </tr>
+            </thead>
+        <tbody>
+<!--            <tr>
+                <td colspan="4"></td>
+            </tr>-->
+            <tr data-ng-repeat="order in customer.orders |orderBy:orderBy:reverse" >
+                <td>
+                    {{order.product}}
+                </td>
+
+                <td>
+                    {{order.quantity}}
+                </td>
+                <td>
+                    {{order.price |currency}}
+                </td>
+                <td>
+                    {{order.orderTotal| currency}}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    Grand Total
+                </td>
+                <td>
+                    <strong>{{ordersTotal | currency}}</strong>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
